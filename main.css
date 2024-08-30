@@ -6,6 +6,7 @@ button {
     height: 1.3cm;
     background-color: greenyellow;
     color: blue;
+}
 #info {
-
+    background-image: image("minecraft.png");
 }
