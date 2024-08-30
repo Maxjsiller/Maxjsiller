@@ -7,6 +7,6 @@ button {
     background-color: greenyellow;
     color: blue;
 }
-#info {
+body {
     background-image: url("minecraft.jpg");
 }
