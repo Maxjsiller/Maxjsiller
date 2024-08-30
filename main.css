@@ -8,5 +8,5 @@ button {
     color: blue;
 }
 #info {
-    background-image: image("minecraft.png");
+    background-image: url("minecraft.jpg");
 }
