@@ -10,3 +10,15 @@ button {
 div.info {
     background-image: url("minecraft.jpg");
 }
+h1 {
+    color: lime;
+}
+h2 {
+    color: rgb(255, 255, 255);
+}
+h3 {
+    color: yellow;
+}
+h4 {
+    color: white;
+}
