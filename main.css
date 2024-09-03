@@ -9,6 +9,11 @@ button {
     color: blue;
     height: 1.8cm;
 }
+button:hover {
+    background-color: darkseagreen;
+    color: darkblue;
+}
+
 
 h1 {
     color: lime;
@@ -28,6 +33,11 @@ h4 {
 
 div.info {
     background-image: url("minecraft.jpg");
+}
+/* Active link style */
+.active {
+    background-color: deepskyblue;
+    color: white;
 }
 
 /* Styles for screens 600px and up */
