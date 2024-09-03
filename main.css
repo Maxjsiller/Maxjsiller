@@ -1,24 +1,26 @@
-#topbar {
-    background-color: aqua;
-    height: 1.5cm;
-}
-button {
-    height: 1.3cm;
-    background-color: greenyellow;
-    color: blue;
-}
-div.info {
-    background-image: url("minecraft.jpg");
-}
-h1 {
-    color: lime;
-}
-h2 {
-    color: rgb(255, 255, 255);
-}
-h3 {
-    color: yellow;
-}
-h4 {
-    color: white;
+@media (min-width: 1024px){
+    #topbar {
+        background-color: aqua;
+        height: 1.5cm;
+    }
+    button {
+        height: 1.3cm;
+        background-color: greenyellow;
+        color: blue;
+    }
+    div.info {
+        background-image: url("minecraft.jpg");
+    }
+    h1 {
+        color: lime;
+    }
+    h2 {
+        color: rgb(255, 255, 255);
+    }
+    h3 {
+        color: yellow;
+    }
+    h4 {
+        color: white;
+    }
 }
