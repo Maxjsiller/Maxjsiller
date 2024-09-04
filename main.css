@@ -10,7 +10,7 @@ button {
     height: 1.8cm;
 }
 button:hover {
-    background-color: darkseagreen;
+    background-color: rgb(0, 255, 0);
     color: darkblue;
 }
 
@@ -36,7 +36,7 @@ div.info {
 }
 /* Active link style */
 .active {
-    background-color: deepskyblue;
+    background-color: rgb(0, 255, 55);
     color: white;
 }
 
