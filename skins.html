@@ -7,13 +7,40 @@
     <meta name="keywords" content="Minecraft, addons, skins, modding">
     <title>Skins - mczoo & co | Minecraft Addons & Skins</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <script>
+      window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000"
+            },
+            "button": {
+              "background": "#f1d600",
+              "text": "#000"
+            }
+          },
+          "theme": "classic",
+          "position": "bottom",
+          "content": {
+            "message": "This website uses cookies to ensure you get the best experience on our website.",
+            "dismiss": "Got it!",
+            "link": "Learn more",
+            "href": "legal.html"  <!-- This links to your privacy policy page -->
+          }
+        })
+      });
+    </script>
 </head>
 <body>
     <div id="topbar">
         <button onclick="window.location.replace('index.html')">home</button>
         <button onclick="window.location.replace('about.html')">about</button>
-        <button class="active" onclick="window.location.replace('index.html')">home</button>
+        <button class="active" onclick="window.location.replace('index.html')">skins</button>
         <button onclick="window.location.replace('addons.html')">addons</button>
+        <button onclick="window.location.replace('legal.html')">legal stuff</button>
     </div>
     <div class="info">
         <h1>welcome to our skins collection</h1>

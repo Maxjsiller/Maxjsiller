@@ -7,6 +7,32 @@
     <meta name="description" content="We create Minecraft addons and skins. Check out our latest collections!">
     <meta name="keywords" content="Minecraft, addons, skins, modding">
     <title>home - mczoo & co | Minecraft Addons & Skins</title>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <script>
+      window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000"
+            },
+            "button": {
+              "background": "#f1d600",
+              "text": "#000"
+            }
+          },
+          "theme": "classic",
+          "position": "bottom",
+          "content": {
+            "message": "This website uses cookies to ensure you get the best experience on our website.",
+            "dismiss": "Got it!",
+            "link": "Learn more",
+            "href": "legal.html"  <!-- This links to your privacy policy page -->
+          }
+        })
+      });
+    </script>
 </head>
 <body>
     <div id="topbar">
@@ -15,6 +41,7 @@
     <button onclick="window.location.replace('about.html')">about</button>
     <button onclick="window.location.replace('skins.html')">skins</button>
     <button onclick="window.location.replace('addons.html')">addons</button>
+    <button onclick="window.location.replace('legal.html')">legal stuff</button>
     <div class="info">
         <h1>welcome to mczoo & co</h1>
         <h3>We are a minecraft addon and skin creation site.</h3>
