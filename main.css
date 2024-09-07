@@ -1,21 +1,7 @@
-.cookie-consent {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #333;
-    color: #1aff00;
-    padding: 10px;
-    text-align: center;
-    display: none;
-}
-.cookie-consent button {
-    background: #f90;
-    border: none;
-    padding: 5px 10px;
-    color: #fff;
-    cursor: pointer;
-}
+#cookie-consent-banner {
+    font-family: Arial, sans-serif;
+  }
+  
 #topbar {
     background-color: aqua;
     height: 2cm;

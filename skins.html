@@ -7,28 +7,14 @@
     <meta name="keywords" content="Minecraft, addons, skins, modding">
     <title>Skins - mczoo & co | Minecraft Addons & Skins</title>
     <link rel="stylesheet" href="main.css">
-
-    <div class="cookie-consent" id="cookieConsent">
-      We use cookies to improve your experience. By using our site, you agree to our use of cookies.
-      <button id="acceptCookies">Accept</button>
-  </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const cookieConsent = document.getElementById('cookieConsent');
-        const acceptCookiesButton = document.getElementById('acceptCookies');
-
-        if (!localStorage.getItem('cookiesAccepted')) {
-            cookieConsent.style.display = 'block';
-        }
-
-        acceptCookiesButton.addEventListener('click', function() {
-            localStorage.setItem('cookiesAccepted', 'true');
-            cookieConsent.style.display = 'none';
-        });
-    });
-</script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+  <div id="cookie-consent-banner" style="display: none; position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; padding: 10px; text-align: center;">
+    <p>This website uses cookies to ensure you get the best experience on our website. <a href="/privacy-policy" style="color: #f1d600;">Learn more</a>.</p>
+    <button id="accept-cookies" style="background: #f1d600; color: #000; border: none; padding: 5px 10px; cursor: pointer;">Got it!</button>
+  </div>
+  
     <div id="topbar">
         <button onclick="window.location.replace('index.html')">home</button>
         <button onclick="window.location.replace('about.html')">about</button>
