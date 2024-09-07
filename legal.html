@@ -7,31 +7,25 @@
     <meta name="description" content="We create Minecraft addons and skins. Check out our latest collections!">
     <meta name="keywords" content="Minecraft, addons, skins, modding">
     <title>legal - mczoo & co | Minecraft Addons & Skins</title>
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <div class="cookie-consent" id="cookieConsent">
+      We use cookies to improve your experience. By using our site, you agree to our use of cookies.
+      <button id="acceptCookies">Accept</button>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cookieConsent = document.getElementById('cookieConsent');
+        const acceptCookiesButton = document.getElementById('acceptCookies');
 
-    <script>
-      window.addEventListener("load", function(){
-        window.cookieconsent.initialise({
-          "palette": {
-            "popup": {
-              "background": "#000"
-            },
-            "button": {
-              "background": "#f1d600",
-              "text": "#000"
-            }
-          },
-          "theme": "classic",
-          "position": "bottom",
-          "content": {
-            "message": "This website uses cookies to ensure you get the best experience on our website.",
-            "dismiss": "Got it!",
-            "link": "Learn more",
-            "href": "legal.html"  <!-- This links to your privacy policy page -->
-          }
-        })
-      });
-    </script>
+        if (!localStorage.getItem('cookiesAccepted')) {
+            cookieConsent.style.display = 'block';
+        }
+
+        acceptCookiesButton.addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieConsent.style.display = 'none';
+        });
+    });
+</script>
 </head>
 <body>
     <div id="topbar">
