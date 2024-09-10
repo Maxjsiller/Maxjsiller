@@ -5,7 +5,9 @@
     background-color: aqua;
     height: 2cm;
 }
-
+p{
+    color: white;
+}
 button {
     background-color: greenyellow;
     color: blue;
