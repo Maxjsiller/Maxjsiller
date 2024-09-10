@@ -41,7 +41,7 @@ div.info {
 /* Active link style */
 .active {
     background-color: red;
-    color: white;
+    color: lightgreen;
 }
 
 /* Styles for screens 600px and up */
